@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .h11{
+             font: 15px 'arial'; background-color: whitesmoke; width: 100px;  display: inline-block
+        }
+        .d1{
+            margin-left: 5%; margin-top: 50px; width: 600px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Enter Faculty Details Here</h1>
+    <form  method="POST" action="/record1" enctype="multipart/form-data">
+    <div class="d1">
+    <span class="h11"> Faculty Name :  </span> <input type="text" name="fname" ><br><br>
+    <span class="h11"> Faculty ID :    </span> <input type="text" name="fid" ><br><br>
+    <span class="h11"> Image :         </span> <input type="file" id="myFile" name="iname"><br><br>
+    <span class="h11"> Date of Birth : </span> <input type="date" name="dob" ><br><br>
+    <span class="h11"> Mobile No. :    </span> <input type="text" name="mob" ><br><br>
+    <span class="h11"> Address :       </span> <input type="text" name="add" ><br><br>
+    <span class="h11"> Joining Date  : </span> <input type="date" name="jd" ><br><br>
+    <span class="h11"> Salary :        </span> <input type="text" name="slr" ><br><br>
+    <span class="h11"> Qualification : </span> <input type="text" name="qfc" ><br><br><br><br>
+
+
+    <button type="submit">Submit</button>
+</div>
+</form>
+</body>
+</html>

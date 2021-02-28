@@ -1,0 +1,128 @@
+body{
+    background-color: blanchedalmond; background-image: url(/static/adm4.jpg);
+}
+.d1{
+    width: 515px; height: 600px; margin-left: 1%; margin-top: 10px; background-color: whitesmoke;
+    border: 1px grey solid; border-radius: 5px;  float: left; background-image: url(/static/adm2.jpg);
+    overflow-y: scroll; overflow-x: hidden; 
+}
+.d11{
+    width: 90%; height: 550px; margin-top: 20px; margin-left: 5%; background-color: cadetblue;
+    border: 1px grey solid; border-radius: 5px; background-image: url(/static/adm5.jpg);
+}
+.d12{
+    background-color: cadetblue; width: 90%; height: 300px; border: 2px grey solid; border-radius: 4px;
+    margin-top: 60px; margin-left: 5%; background-image: url(/static/adm5.jpg);
+}
+.d13{
+    width: 90%; height: 550px; margin-top: 110px; margin-bottom: 30px; margin-left: 5%;  background-color: cadetblue;
+    border: 2px grey solid; border-radius: 5px; background-image: url(/static/adm5.jpg);
+}
+.d3{
+    height: 400px; width: 56%; overflow-y: scroll; overflow-x: hidden; border: 1px grey solid; border-radius: 4px;
+    margin-top: 10px; float: left; background-color: aliceblue; margin-left: 1%;  background-image: url(/static/adm2.jpg);
+}
+
+.h1{
+    color: black; font: 22px 'arial'; margin: 20px 1px 20px 1px; 
+    text-align: center; 
+}
+.h2{
+    color: black; font: 18px 'arial rounded mt'; margin: 30px 20px 10px 20px; float: left;
+}
+.i1{
+    color: black; margin: 30px 20px 10px 20px; width: 240px;  
+}
+.h3{
+    color: black; font: 18px 'arial rounded mt'; margin: 1px 98px 10px 20px; float: left;
+}
+.i2{
+    color: black; margin: 1px 20px 10px 20px; width: 240px;
+}
+.h4{
+    color: black; font: 18px 'arial rounded mt'; margin: 1px 105px 10px 20px; float: left;
+}
+.s1{
+    color: black; margin: 1px 20px 10px 20px; width: 245px;
+}
+.h5{
+    color: black; font: 18px 'arial rounded mt';  margin: 1px 105px 10px -140px; float: left;
+}
+.i3{
+    color: black; margin: 1px 20px 10px 10px; width: 240px;
+}
+.h6{
+    color: black; font: 18px 'arial rounded mt'; margin: 1px 30px 10px 20px; float: left;
+}
+.i4{
+    color: black; margin: 1px 20px 10px 10px; width: 240px;
+}
+.h7{
+    color: black; font: 18px 'arial rounded mt'; margin: 1px 83px 10px 20px; float: left;
+}
+.s2{
+    color: black; margin: 1px 20px 10px 10px; width: 147px; width: 245px;
+}
+.h8{
+    color: black; font: 18px 'arial rounded mt'; margin: 31px 53px 10px -145px; float: left;
+}
+.s3{
+    color: black; margin: 1px 20px 10px 10px; width: 245px;
+}
+.h9{
+    color: black; font: 18px 'arial rounded mt'; margin: 1px 30px 10px 20px; float: left;
+}
+.i5{
+    color: black; margin: 1px 20px 10px 10px; width: 240px;
+}
+.h10{
+    color: black; font: 18px 'arial rounded mt'; margin: 1px 95px 10px 20px; float: left;
+}
+.s4{
+    color: black; margin: 1px 1px 10px 10px; width: 245px;
+}
+.b1{
+    margin: 30px 10px 30px -100px;
+    width: 90px; height: 30px; background-color: red; 
+    border: 1px red solid; border-radius: 4px; 
+    color: blanchedalmond; font: 16px arial;
+}
+
+a:link, a:visited {
+    background-color: #f44336; color: white;
+    padding: 20px 45px; font-size: 22px; font-family: 'arial rounded mt'; width: 200px;
+    text-align: center; text-decoration: none; display: inline-block;
+  }
+  
+  a:hover, a:active {
+    background-color: red;
+  }
+
+.d2h1{
+    margin: 12px; font: 18px 'arial';
+}
+.d2i1{
+    width: 230px; padding: 12px 20px;
+    display: inline-block; border: 1px solid #ccc; border-radius: 4px;
+    box-sizing: border-box; margin: 10px 1px 20px 30px;
+}
+.d2b1{
+    width: 90px; height: 37px; background-color: red; 
+    border: 1px red solid; border-radius: 4px; 
+    color: blanchedalmond; font: 16px arial;
+}
+.d3i1{
+    width: 180px; padding: 6px 10px;
+    display: inline-block; border: 1px solid #ccc; border-radius: 4px;
+    box-sizing: border-box; margin: 5px 1px 1px 20px; 
+}
+.d3b1{
+    width: 80px; height: 30px; background-color: goldenrod; 
+    border: 1px goldenrod solid; border-radius: 4px; 
+    color: blanchedalmond; font: 16px arial; 
+}
+.d3b2{
+    width: 80px; height: 30px; background-color: goldenrod; 
+    border: 1px goldenrod solid; border-radius: 4px; 
+    color: blanchedalmond; font: 16px arial; float: right; margin-top: -30px;
+}

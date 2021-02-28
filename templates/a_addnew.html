@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>addnew</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/loggedin.css')}}">
+</head>
+<body>
+    
+<div class="d1">
+    <div class="d11">
+        <form method="POST" action="/addnew">
+            <h1 class="h1">Enter Details to add new faculty</h1>
+            <div>  
+            <span class="h2">Faculty Name</span>
+            <input class="i1" type="text" name="t41"> 
+            
+            <span class="h3">Date</span>  
+            <input class="i2" type="text" name="t42">
+            
+            <span class="h4">Day</span> 
+            <select class="s1"  name="t43">
+                <option>Monday</option>
+                <option>Tuesday</option>
+                <option>Wednesday</option>
+                <option>Thursday</option>
+                <option>Friday</option>
+                <option>Saturday</option>
+                <option>Sunday</option>
+                <option>Everyday</option>
+                </select>
+            </div>
+            <h2 class="h5">Time</h2>   
+            <input class="i3" type="text" name="t44">
+        
+            <h2 class="h6">Classrom No.</h2>
+            <input class="i4" type="text" name="t45">
+        
+            <h2 class="h7">Course</h2>
+            <select class="s2"  name="t46">
+                <option>B.tech</option>
+                <option>M.tech</option>
+                <option>MBA</option>
+                <option>MCA</option>
+                </select>
+            
+            <h2 class="h8">Semester</h2>    
+            <select class="s3"  name="t47">
+                <option>First Semester</option>
+                <option>Second Semester</option>
+                <option>Third Semester</option>
+                <option>Fourth Semester</option>
+                <option>Fifth Semester</option>
+                <option>Sixth Semester</option>
+                <option>Seventh Semester</option>
+                <option>Eight Semester</option>
+                </select>
+            
+            <h2 class="h9">Subject Code</h2>
+            <input class="i5" type="text" name="t49">
+            
+            <h2 class="h10">Batch</h2>  
+            <select class="s4"  name="t48">
+                <option>Computer Science Engineering I </option>
+                <option>Computer Science Engineering II</option>
+                <option>Computer Science Engineering III</option>
+                <option>Mechanical Engineering </option>
+                <option>Civil Engineering </option>
+                <option>Chemical Engineering </option>
+                <option>Information & Technology Engineering </option>
+                </select> <br>
+            
+            <button class="b1" type="submit" name="submit_a" value="submit_a">Submit</button>
+        </form>
+    </div>
+
+    <div class="d12">
+        <form method="POST" action="/admdelete">
+            <h3 class="d2h1">Want to delete someone details... ?</h3>
+            <input class="d2i1" type="text" name="t61" placeholder="Enter Faculty Name or ID..." >
+            <button class="d2b1" type="submit" >Delete</button>
+        </form>
+    </div> 
+
+    <div class="d13">
+        <form method="POST" action="/admonedelete">
+            <h1 class="h1">Enter Details Delete any faculty</h1>
+            <div>  
+            <h2 class="h2">Faculty Name</h2>
+            <input class="i1" type="text" name="t51"> 
+        
+            <h2 class="h3">Date</h2>  
+            <input class="i2" type="text" name="t52">
+        
+            <h2 class="h4">Day</h2> 
+            <select class="s1"  name="t53">
+                <option>Monday</option>
+                <option>Tuesday</option>
+                <option>Wednesday</option>
+                <option>Thursday</option>
+                <option>Friday</option>
+                <option>Saturday</option>
+                <option>Sunday</option>
+                <option>Everyday</option>
+                </select>
+            </div>
+            <h2 class="h5">Time</h2>   
+            <input class="i3" type="text" name="t54">
+        
+            <h2 class="h6">Classrom No.</h2>
+            <input class="i4" type="text" name="t55">
+        
+            <h2 class="h7">Course</h2>
+            <select class="s2"  name="t56">
+                <option>B.tech</option>
+                <option>M.tech</option>
+                <option>MBA</option>
+                <option>MCA</option>
+                </select>
+        
+            <h2 class="h8">Semester</h2>    
+            <select class="s3"  name="t57">
+                <option>First Semester</option>
+                <option>Second Semester</option>
+                <option>Third Semester</option>
+                <option>Fourth Semester</option>
+                <option>Fifth Semester</option>
+                <option>Sixth Semester</option>
+                <option>Seventh Semester</option>
+                <option>Eight Semester</option>
+                </select>
+        
+            <h2 class="h9">Subject Code</h2>
+            <input class="i5" type="text" name="t59">
+        
+            <h2 class="h10">Batch</h2>  
+            <select class="s4"  name="t58">
+                <option>Computer Science Engineering I </option>
+                <option>Computer Science Engineering II</option>
+                <option>Computer Science Engineering III</option>
+                <option>Mechanical Engineering </option>
+                <option>Civil Engineering </option>
+                <option>Chemical Engineering </option>
+                <option>Information & Technology Engineering </option>
+                </select> <br>
+            
+            <button class="b1" type="submit" name="submit_a" value="submit_a">Delete</button>
+        </form>
+    </div>
+</div> 
+
+
+<div class="d3">
+    <form method="post" action="/admsearchdetail">    
+            <input class="d3i1" type="text" name="t31" placeholder="Enter Faculty Name or ID..." >
+            <button class="d3b1" type="submit" >Search</button>
+    </form>
+
+    <form method="POST" action="/showtable">    
+        <button class="d3b2" type="submit" >Show all</button>
+        <table border="1px" >
+            <tr><th>Faculty name</th>
+            <th>Date</th>
+            <th>Day</th>
+            <th>Time</th>
+            <th>Classroom No.</th>
+            <th>Course</th>
+            <th>Semester</th>
+            <th>Batch</th>
+            <th>Subject Code</th>
+            </tr>
+        {% for i in data %}
+        <tr><td>{{i[0]}}</td>
+            <td>{{i[1]}}</td>
+            <td>{{i[2]}}</td>
+            <td>{{i[3]}}</td>
+            <td>{{i[4]}}</td>
+            <td>{{i[5]}}</td>
+            <td>{{i[6]}}</td>
+            <td>{{i[7]}}</td>
+            <td>{{i[8]}}</td>    
+        </tr>
+        {%endfor%}
+            </table>
+    </form>
+</div>
+
+
+
+    
+
+</body>
+</html>

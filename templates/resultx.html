@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>{{result["Name"]}}'s results</h1>
+    {% set total = [0] %}
+    <table border = 1>
+    {% for key, val in result.items() %}
+            {% if key != 'Name' %}
+                    {% set _ = total.append(total.pop() + val|int) %}
+                    <tr>
+                            <td>{{ key }}</td>
+                            <td>{{ val }}</td>
+                            <td>{{ total[0] }}</td>
+                    </tr>
+            {% endif %}
+    {% endfor %}
+    <tr>
+            <td>Total</td>
+            <td>{{ total[0] }}</td>
+    </tr>
+    </table>
+    
+</body>
+</html>

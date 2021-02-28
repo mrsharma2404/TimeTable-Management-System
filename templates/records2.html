@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .d2{
+            margin-left: 250px; margin-top: -20px;
+        }
+        .d4{
+            float: right; width: 25%;
+        }
+        .d3{
+            margin: 100px 50px 10px 100px; border: 1px black solid; width: 27%; padding: 50px;
+        }
+        .t2{
+            width: 90%;
+        }
+        .h11{
+             font: 15px 'arial'; background-color: whitesmoke; width: 100px;  display: inline-block
+        }
+    </style>
+</head>
+<body>
+<div>
+    <form method ="POST" action="/record3">
+    <div class="d1" >
+        <h1 class="h1">Faculty Details</h1>
+        <input class="i1" type="text" name="f11" placeholder="Enter Your Name or ID..." >
+        <button class="b1" type="submit" >Search</button>       
+    </div>
+    </form>
+    <form method ="POST" action="/record4">
+        <div class="d2">
+            <button class="b1" type="submit" >Show all</button> 
+        </div>
+    </form>
+
+
+
+
+{% if data %}
+<div class="d3">
+    {% for row in data %}
+    <img src="uploads/{{ row[2] }}" height="100px" width="100px"><br><br>
+    <span class="h11"> Faculty Name : </span> {{ row[0] }}<br><br>
+    <span class="h11"> Faculty ID :   </span>{{ row[1] }}<br><br>
+    <span class="h11"> DOB :          </span>{{ row[3] }}<br><br>
+    <span class="h11"> Mob. NO. :     </span>{{ row[4] }}<br><br>
+    <span class="h11"> Address :      </span>{{ row[5] }}<br><br>
+    <span class="h11"> JOining Date : </span>{{ row[6] }}<br><br>
+    <span class="h11"> Salary :       </span>{{ row[7] }}<br><br>
+    <span class="h11"> Qualification :</span>{{ row[8] }}<br><br>
+    <br>
+{% endfor %}
+</div>
+{%endif%}
+
+<div class="d4">
+    {% if data1 %}
+    <table class="t2" border="1" >
+        <tr>
+            <th>All Faculty Name</th>
+        </tr>
+        {% for row in data1 %}
+        <tr>
+            <td>
+                {{row[0]}}
+            </td>
+        </tr>
+        {%endfor%}
+    </table>
+    {%endif%}
+</div>
+        
+    </body>
+</html>

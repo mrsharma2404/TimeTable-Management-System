@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faculty Time Table</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/fsearch.css')}}">
+</head>
+<body>
+    <form method ="POST" action="/floged">
+<div class="d1">
+    <h1 class="h1">Faculty Time Table</h1>
+    <input class="i1" type="text" name="f1" placeholder="Enter Your Name or ID..." >
+    <button class="b1" type="submit" >Search</button>
+    
+</div>
+</form>
+<br><br><br><hr><br><br>
+{% if data %}
+<div>
+    <table style="width: 80%; margin: auto;" border="2" >
+        <tr><th>Faculty name</th>
+            <th>Day</th>
+            <th>Time</th>
+            <th>Classroom No.</th>
+            <th>Course</th>
+            <th>Semester</th>
+            <th>Batch</th>
+            <th>Subject Code</th>>
+        </tr>
+        {% for i in data %}
+        <tr><td>{{i[0]}}</td>
+            <td>{{i[2]}}</td>
+            <td>{{i[3]}}</td>
+            <td>{{i[4]}}</td>
+            <td>{{i[5]}}</td>
+            <td>{{i[6]}}</td>
+            <td>{{i[7]}}</td>
+            <td>{{i[8]}}</td>
+            </tr>
+            {%endfor%}
+            </table>
+</div>
+{%endif%}
+
+</body>
+</html>
